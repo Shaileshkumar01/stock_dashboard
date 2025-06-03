@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stock Market Dashboard</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>📈 Stock Dashboard</h1>
+    <input type="text" id="stockSymbol" placeholder="Enter Stock Symbol (e.g. AAPL)" />
+    <button onclick="getStockData()">Search</button>
+  </header>
+  <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+<div id="watchlist">
+  <h3>Watchlist</h3>
+  <ul id="watchlist-items"></ul>
+</div>
+
+  <main>
+    <section id="stock-info">
+      <h2 id="stock-name">Stock Info</h2>
+      <p id="stock-price">Price: --</p>
+    </section>
+
+    <section>
+      <canvas id="stockChart" width="600" height="400"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with 💻 HTML, CSS, JS</p>
+  </footer>
+
+  <script src="js/chart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
